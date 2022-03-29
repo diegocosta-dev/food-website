@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
+/* Default settings */
 :root {
   --green: #27ae60;
   --black: #192a56;
@@ -21,11 +22,12 @@
 
 html {
   font-size: 62.5%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   scroll-padding-top: 5.5rem;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
 }
-
+ 
+/* Header and Navbar settings */
 header {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -145,9 +147,69 @@ header .icons a:hover{
 }
 
 
+/* Slider settings */
+section {
+  padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+  background: #eee;
+}
+
+.home .home-slider .slider {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 9rem;
+}
+
+.home .home-slider .slider .content {
+  flex:1 1 45rem;
+}
+
+.home .home-slider .warpper .image {
+  flex:1 1 45rem;
+}
+
+.home .home-slider .slider .image img{
+  width: 100%;
+}
+
+.home .home-slider .slider .content span{
+  color: var(--green);
+  font-size: 2.5rem;
+}
+
+.home .home-slider .slider .content h3{
+  color: var(--black);
+  font-size: 7rem;
+}
+
+.home .home-slider .slider .content p{
+  color: var(--light-color);
+  font-size: 2.2rem;
+  padding: 3rem 0;
+  line-height:1.5;
+}
+
+.btn{
+  margin-top:1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--black);
+  border-radius: .5rem;
+  cursor: pointer;
+  padding: .8rem 3rem;
+}
+
+.btn:hover{
+  background: var(--green);
+}
 
 
-
+/* Screen settings */
 @media(max-width:991px) {
   html {
     font-size: 55%;

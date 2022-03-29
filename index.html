@@ -7,6 +7,7 @@
     <title>Food Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   </head>
   <body>
     <div id="navmenu">
@@ -38,7 +39,88 @@
         </form>
 
     </div>
+    <section class="home" id="home">
+
+      <div class="swiper mySwiper home-slider">
+
+        <div class="swiper-wrapper warpper">
+
+          <div class="swiper-slide slider">
+            <div class="content">
+              <span>Our special diesh</span>
+              <h3>spicy noobles</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Voluptate nulla praesentium molestias 
+                tempore doloremque blanditiis aut, maiores eius cum aperiam 
+                debitis quisquam earum quaerat itaque repellat sapiente, 
+                sit explicabo omnis.</p>
+                <a href="#" class="btn">order now</a>
+            </div>
+            <div class="image">
+              <img src="/img/home-img-1.png" alt="home image">
+            </div>
+          </div>
+
+          <div class="swiper-slide slider">
+            <div class="content">
+              <span>Our special diesh</span>
+              <h3>fried chicken</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Voluptate nulla praesentium molestias 
+                tempore doloremque blanditiis aut, maiores eius cum aperiam 
+                debitis quisquam earum quaerat itaque repellat sapiente, 
+                sit explicabo omnis.</p>
+                <a href="#" class="btn">order now</a>
+            </div>
+            <div class="image">
+              <img src="/img/home-img-2.png" alt="home image">
+            </div>
+          </div>
+
+          <div class="swiper-slide slider">
+            <div class="content">
+              <span>Our special diesh</span>
+              <h3>hot pizza</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Voluptate nulla praesentium molestias 
+                tempore doloremque blanditiis aut, maiores eius cum aperiam 
+                debitis quisquam earum quaerat itaque repellat sapiente, 
+                sit explicabo omnis.</p>
+                <a href="#" class="btn">order now</a>
+            </div>
+            <div class="image">
+              <img src="/img/home-img-3.png" alt="home image">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+
+
+
     <script type="module" src="/main.js"></script>
     <script src="/scripts.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+     var swiper = new Swiper(".home-slider", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
